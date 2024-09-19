@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+   <top>
+      <TitledPane collapsible="false" prefHeight="20.0" prefWidth="600.0" text="Register" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="432.0" minWidth="10.0" prefWidth="288.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="207.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="106.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="106.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="396.0" text="Enter the ID of the competitor: " />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="459.0" text="Enter the first name of the competitor: " GridPane.rowIndex="1" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="356.0" text="Enter the last name of the competitor: " GridPane.rowIndex="2" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="295.0" text="Please choose your category of vehicle:" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="295.0" text="Please choose your character:" GridPane.rowIndex="4" />
+            <TextField fx:id="myTextField1" maxWidth="-Infinity" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="myChoiceBox1" maxWidth="180.0" prefHeight="30.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="myChoiceBox2" maxWidth="180.0" prefHeight="30.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="myButton1" mnemonicParsing="false" onAction="#submit1" text="Submit" GridPane.columnIndex="2" />
+            <TextField fx:id="myTextField2" maxWidth="-Infinity" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="myTextField3" maxWidth="-Infinity" prefHeight="26.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="myButton2" mnemonicParsing="false" onAction="#submit2" text="Submit" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="myButton3" mnemonicParsing="false" onAction="#submit3" text="Submit" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="myLabel1" GridPane.columnIndex="3" />
+            <Label fx:id="myLabel2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="myLabel3" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="myButton4" mnemonicParsing="false" onAction="#submit4" prefHeight="31.0" prefWidth="134.0" text="Register" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+            <Label fx:id="myLabel4" alignment="CENTER" prefHeight="17.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
